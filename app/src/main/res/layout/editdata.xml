@@ -8,13 +8,16 @@
     tools:context=".cadastro">
 
     <!-- TODO: Update blank fragment layout -->
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:src="?attr/homeAsUpIndicator"
-        tools:layout_editor_absoluteX="330dp"
-        tools:layout_editor_absoluteY="33dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -73,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.033" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passTextEdit"
@@ -92,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.179" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passTextEdit"
@@ -101,17 +104,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/field"
         android:hint="@string/nome"
         android:minHeight="48dp"
+        android:paddingLeft="20dp"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.301" />
+        app:layout_constraintVertical_bias="0.322" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passTextEdit"
@@ -120,17 +123,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/field"
         android:hint="@string/pais"
         android:minHeight="48dp"
+        android:paddingLeft="20dp"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.452" />
+        app:layout_constraintVertical_bias="0.468" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/passTextEdit"
@@ -139,17 +142,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/field"
         android:hint="@string/idade"
         android:minHeight="48dp"
+        android:paddingLeft="20dp"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.611" />
 
     <Button
         android:id="@+id/button"
