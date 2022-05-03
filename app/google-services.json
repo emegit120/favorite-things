@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "768399626222",
+    "project_id": "favorite-things-e6d38",
+    "storage_bucket": "favorite-things-e6d38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768399626222:android:e05300af407a6b15da88ff",
+        "android_client_info": {
+          "package_name": "br.com.threeX.favoritethings"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "768399626222-cmb848c7r8djt9mf0148brpg21l0548l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDR28qBU3PuUIIdiLhKnK1ZjjIn2hmyxJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "768399626222-cmb848c7r8djt9mf0148brpg21l0548l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
