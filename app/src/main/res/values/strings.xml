@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FavoriteThings</string>
     <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
     <string name="e_mail">E-mail</string>
     <string name="senha">Senha</string>
     <string name="cadastrar">Cadastrar</string>
