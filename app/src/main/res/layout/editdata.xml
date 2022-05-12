@@ -8,6 +8,13 @@
     tools:context=".cadastro">
 
     <!-- TODO: Update blank fragment layout -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="?attr/homeAsUpIndicator"
+        tools:layout_editor_absoluteX="330dp"
+        tools:layout_editor_absoluteY="33dp" />
 
     <TextView
         android:id="@+id/textView"
