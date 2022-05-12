@@ -21,4 +21,9 @@
             android:id="@+id/action_global_mainActivity"
             app:destination="@id/mainActivity" />
     </navigation>
+    <fragment
+        android:id="@+id/cadastro"
+        android:name="br.com.threeX.favoritethings.cadastro"
+        android:label="cadastro"
+        tools:layout="@layout/cadastro" />
 </navigation>
