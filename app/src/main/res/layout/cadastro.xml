@@ -8,20 +8,22 @@
     tools:context=".cadastro">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="16dp"
-        android:text="@string/login"
         android:fontFamily="@font/engraveded"
+        android:text="@string/login"
         android:textAlignment="center"
-        android:textColorHint="@color/white"
-        android:textSize="48dp"
         android:textAllCaps="true"
+        android:textColor="#F11D1A"
+        android:textSize="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,6 +56,24 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/field"
+        android:hint="@string/confirm_senha"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/field"
         android:hint="@string/senha"
         android:minHeight="48dp"
         android:textColorHint="@color/white"
@@ -62,10 +82,65 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/field"
+        android:hint="@string/pais"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/field"
+        android:hint="@string/nome"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/passTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/field"
+        android:hint="@string/idade"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextEdit"
+        app:layout_constraintVertical_bias="0.603" />
 
     <Button
         android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/engraveded"
@@ -74,14 +149,12 @@
         android:textAllCaps="true"
         android:textColor="#F11D1A"
         android:textSize="26dp"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        app:strokeColor="#F11D1A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passTextEdit"
-        app:layout_constraintVertical_bias="0.093"
+        app:layout_constraintVertical_bias="0.222"
+        app:strokeColor="#F11D1A"
         tools:ignore="DuplicateSpeakableTextCheck" />
 
     <Button
