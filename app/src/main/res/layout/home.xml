@@ -84,17 +84,21 @@
         android:id="@+id/imageButton2"
         android:layout_width="85dp"
         android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
         android:src="@drawable/flagkingdom"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="704dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"
         android:layout_width="89dp"
         android:layout_height="63dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:src="@drawable/flagbrazil"
-        tools:layout_editor_absoluteX="305dp"
-        tools:layout_editor_absoluteY="705dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
