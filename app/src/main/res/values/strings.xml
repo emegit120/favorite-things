@@ -2,11 +2,12 @@
     <string name="app_name">FavoriteThings</string>
     <string name="login">Login</string>
     <string name="entrar">Enter</string>
+    <string name="save">Save</string>
+    <string name="nome">Nome</string>
     <string name="e_mail">Email</string>
     <string name="senha">Password</string>
     <string name="confirm_senha">Confirm Password</string>
     <string name="cadastrar">Register</string>
-    <string name="nome">Your Full Name</string>
     <string name="pais">Country</string>
     <string name="idade">Age</string>
     <string name="listview">Favorite List</string>
