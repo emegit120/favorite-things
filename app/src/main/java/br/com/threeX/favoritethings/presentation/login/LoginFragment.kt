@@ -87,14 +87,6 @@ class LoginFragment : BaseFragment() {
             )
         }
 
-        tvResetPassword.setOnClickListener {
-            if (etEmailLogin.text.toString().isEmpty()) {
-                showMessage("Informe o e-mail que deseja alterar a senha")
-            } else {
-                loginViewModel.resetPassword(etEmailLogin.text.toString())
-            }
-        }
-
         tvNewAccount.setOnClickListener {
             findNavController().navigate(R.id.cadastro)
         }

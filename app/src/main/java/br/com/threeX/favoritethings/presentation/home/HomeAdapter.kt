@@ -31,7 +31,6 @@ class HomeAdapter(
 
         fun bind(item: DashboardItem, clickListener: (DashboardItem) -> Unit) {
             val label = itemView.findViewById<TextView>(R.id.textView)
-            val imageView = itemView.findViewById<ImageView>(R.id.textView)
 
             label.text = item.label
 

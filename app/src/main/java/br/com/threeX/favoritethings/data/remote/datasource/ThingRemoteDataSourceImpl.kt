@@ -11,7 +11,7 @@ class ThingRemoteDataSourceImpl(
 
     override suspend fun save(thing: Thing): RequestState<Thing> {
         return try {
-            firebaseFirestore.collection("cars")
+            firebaseFirestore.collection("things")
                 .document(thing.userId)
                 .set(thing)
                 .await()
@@ -23,7 +23,7 @@ class ThingRemoteDataSourceImpl(
 
     override suspend fun findBy(id: String): RequestState<Thing> {
         return try {
-            val thing = firebaseFirestore.collection("cars")
+            val thing = firebaseFirestore.collection("things")
                 .document(id)
                 .get()
                 .await().toObject(Thing::class.java) ?: Thing()

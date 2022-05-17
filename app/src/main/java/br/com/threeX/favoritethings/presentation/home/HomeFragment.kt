@@ -57,7 +57,6 @@ class HomeFragment : BaseAuthFragment() {
 
         setUpView(view)
 
-        registerObserver()
         homeViewModel.getDashboardMenu()
     }
 
@@ -66,72 +65,8 @@ class HomeFragment : BaseAuthFragment() {
         tvHomeHelloUser = view.findViewById(R.id.textView)
     }
 
-    private fun registerObserver() {
-        homeViewModel.dashboardItemsState.observe(viewLifecycleOwner, Observer {
-            when (it) {
-                is RequestState.Loading -> {
-                    showLoading()
-                }
 
-                is RequestState.Success -> {
-                    setUpMenu(it.data)
-                    hideLoading()
-                }
 
-                is RequestState.Error -> {
-                    hideLoading()
-                    showMessage(it.throwable.message)
-                }
-            }
-        })
-
-        homeViewModel.headerState.observe(viewLifecycleOwner, Observer {
-            when(it) {
-                is RequestState.Loading -> {
-                    tvHomeHelloUser.text = "Carregando o usuario"
-                }
-
-                is RequestState.Success -> {
-                    val (title, userName) = it.data
-                    tvHomeHelloUser.text = String.format(title, userName)
-                    hideLoading()
-                }
-
-                is RequestState.Error -> {
-                    hideLoading()
-                    showMessage(it.throwable.message)
-                }
-            }
-        })
-
-    }
-
-    private fun setUpMenu(items: List<DashboardItem>) {
-        rvHomeDashboard.adapter = HomeAdapter(items, this::clickItem)
-    }
-
-    private fun clickItem(item: DashboardItem) {
-        item.onDisabledListener.let {
-            it?.invoke(requireContext())
-        }
-
-        if (item.onDisabledListener == null) {
-            when (item.feature) {
-                "SIGN_OUT" -> {
-                    //chamar o metodo de logout
-                }
-
-                "ETHANOL_OR_GASOLINE" -> {
-                    startDeeplink("${item.action.deeplink}?id=${homeViewModel.userLogged?.id}")
-                }
-
-                else -> {
-                    startDeeplink(item.action.deeplink)
-                }
-
-            }
-        }
-    }
 
     private fun registerBackPressedAction() {
         val callback = object : OnBackPressedCallback(true) {
